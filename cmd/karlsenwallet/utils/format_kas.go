@@ -6,7 +6,7 @@ import (
 	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
 )
 
-// FormatKas takes the amount of sompis as uint64, and returns amount of KAS with 8  decimal places
+// FormatKas takes the amount of sompis as uint64, and returns amount of KLS with 8 decimal places
 func FormatKas(amount uint64) string {
 	res := "                   "
 	if amount > 0 {
