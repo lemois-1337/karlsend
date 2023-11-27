@@ -17,7 +17,7 @@ func RunKarlsendForTesting(t *testing.T, testName string, rpcAddress string) fun
 		t.Fatalf("TempDir: %s", err)
 	}
 
-	karlsendRunCommand, err := StartCmd("KASPAD",
+	karlsendRunCommand, err := StartCmd("KARLSEND",
 		"karlsend",
 		NetworkCliArgumentFromNetParams(&dagconfig.DevnetParams),
 		"--appdir", appDir,

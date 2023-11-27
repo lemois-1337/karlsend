@@ -36,7 +36,7 @@ func startNodes() (teardown func(), err error) {
 	}
 	log.Infof("SYNCED datadir: %s", syncedDataDir)
 
-	syncerCmd, err := common.StartCmd("KASPAD-SYNCER",
+	syncerCmd, err := common.StartCmd("KARLSEND-SYNCER",
 		"karlsend",
 		common.NetworkCliArgumentFromNetParams(activeConfig().NetParams()),
 		"--appdir", syncerDataDir,
@@ -50,7 +50,7 @@ func startNodes() (teardown func(), err error) {
 		return nil, err
 	}
 
-	syncedCmd, err := common.StartCmd("KASPAD-SYNCED",
+	syncedCmd, err := common.StartCmd("KARLSEND-SYNCED",
 		"karlsend",
 		common.NetworkCliArgumentFromNetParams(activeConfig().NetParams()),
 		"--appdir", syncedDataDir,

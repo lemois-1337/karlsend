@@ -109,7 +109,7 @@ func startNode() (teardown func(), err error) {
 	}
 	log.Infof("karlsend datadir: %s", dataDir)
 
-	karlsendCmd, err := common.StartCmd("KASPAD",
+	karlsendCmd, err := common.StartCmd("KARLSEND",
 		"karlsend",
 		common.NetworkCliArgumentFromNetParams(activeConfig().NetParams()),
 		"--appdir", dataDir,
